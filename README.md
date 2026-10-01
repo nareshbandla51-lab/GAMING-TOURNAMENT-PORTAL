@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 Gaming Tournament Portal
 
 A professional-looking **Gaming Tournament Portal** built for an SDC project using only **HTML, CSS and JavaScript**. The project demonstrates a two-module business system with **User** and **Admin** roles, browser-based authentication, tournament registration and administration.
@@ -124,3 +125,7 @@ These are implemented in CSS using `@keyframes`, without animation libraries.
 
 **Gaming Tournament Portal**  
 SDC Academic Project • 2026
+=======
+# Gaming_Tournament_Portal
+A web-based Gaming Tournament Portal built using HTML, CSS, and JavaScript, featuring User and Admin modules, tournament registration, management, and LocalStorage-based authentication.
+>>>>>>> 2dce142db33db355fa3b3128d9e3b2c40cd17ba5
