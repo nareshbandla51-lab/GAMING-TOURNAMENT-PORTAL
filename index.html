@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GameZone - Gaming Tournament Portal" />
+  <title>GameZone | Gaming Tournament Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+  <div class="page-noise"></div>
+  <header class="navbar glass-panel">
+    <a class="brand" href="index.html" aria-label="GameZone home">
+      <span class="brand-mark">GZ</span>
+      <span><strong>GAMEZONE</strong><small>Tournament Portal</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="login.html">Tournaments</a>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Join Now</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> LIVE TOURNAMENTS • READY TO PLAY</div>
+        <h1>ENTER THE <span>ARENA.</span><br />MAKE YOUR NAME.</h1>
+        <p>Find competitive gaming tournaments, register in seconds, and track every match from one powerful portal.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="login.html">Explore Tournaments <span>↗</span></a>
+          <a class="btn btn-ghost btn-lg" href="#how-it-works">How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>4+</strong><span>Games</span></div>
+          <div><strong>20+</strong><span>Tournaments</span></div>
+          <div><strong>500+</strong><span>Players</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay-1">
+        <!-- PHOTO SLOT: Replace assets/images/hero-gaming.jpg with your own gaming artwork -->
+        <div class="hero-card">
+          <div class="hero-image-slot">
+            <img src="assets/images/hero-gaming.jpg" alt="Gaming tournament hero" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback');" />
+            <div class="fallback-gamer" aria-hidden="true">
+              <div class="energy-ring ring-1"></div><div class="energy-ring ring-2"></div>
+              <div class="helmet">◈</div>
+              <div class="silhouette"></div>
+              <span class="pixel pixel-a"></span><span class="pixel pixel-b"></span><span class="pixel pixel-c"></span>
+            </div>
+          </div>
+          <div class="hero-card-overlay">
+            <span class="status-chip">● LIVE</span>
+            <span>SEASON 01</span>
+          </div>
+        </div>
+        <div class="floating-badge badge-one">⚡ <span><b>FAST</b><small>REGISTRATION</small></span></div>
+        <div class="floating-badge badge-two">🏆 <span><b>COMPETE</b><small>WIN REWARDS</small></span></div>
+      </div>
+    </section>
+
+    <section class="ticker-section">
+      <div class="ticker-track">
+        <span>CALL OF DUTY</span><i>✦</i><span>FREE FIRE</span><i>✦</i><span>VALORANT</span><i>✦</i><span>FORTNITE</span><i>✦</i>
+        <span>CALL OF DUTY</span><i>✦</i><span>FREE FIRE</span><i>✦</i><span>VALORANT</span><i>✦</i><span>FORTNITE</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section" id="games">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">CHOOSE YOUR BATTLEFIELD</span><h2>Featured <span>Games</span></h2></div>
+        <p>Build your squad. Pick your game. Enter the bracket.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card game-cod reveal">
+          <!-- PHOTO SLOT: assets/images/cod.jpg -->
+          <img src="assets/images/cod.jpg" alt="Call of Duty" onerror="this.style.display='none'" />
+          <div class="game-overlay"></div><div class="game-content"><span>01</span><h3>CALL OF DUTY</h3><p>Competitive mobile battles</p><a href="login.html">View Tournaments →</a></div>
+        </article>
+        <article class="game-card game-ff reveal reveal-delay-1">
+          <!-- PHOTO SLOT: assets/images/free-fire.jpg -->
+          <img src="assets/images/free-fire.jpg" alt="Free Fire" onerror="this.style.display='none'" />
+          <div class="game-overlay"></div><div class="game-content"><span>02</span><h3>FREE FIRE</h3><p>Fast-paced survival fights</p><a href="login.html">View Tournaments →</a></div>
+        </article>
+        <article class="game-card game-valo reveal reveal-delay-2">
+          <!-- PHOTO SLOT: assets/images/valorant.jpg -->
+          <img src="assets/images/valorant.jpg" alt="Valorant" onerror="this.style.display='none'" />
+          <div class="game-overlay"></div><div class="game-content"><span>03</span><h3>VALORANT</h3><p>Tactical team competition</p><a href="login.html">View Tournaments →</a></div>
+        </article>
+        <article class="game-card game-fortnite reveal reveal-delay-3">
+          <!-- PHOTO SLOT: assets/images/fortnite.jpg -->
+          <img src="assets/images/fortnite.jpg" alt="Fortnite" onerror="this.style.display='none'" />
+          <div class="game-overlay"></div><div class="game-content"><span>04</span><h3>FORTNITE</h3><p>Creative battle royale</p><a href="login.html">View Tournaments →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section video-section" id="how-it-works">
+      <div class="video-wrap reveal">
+        <!-- VIDEO SLOT: Put your own MP4/WebM in assets/videos/arena-intro.mp4 -->
+        <video class="promo-video" autoplay muted loop playsinline poster="assets/images/video-poster.jpg">
+          <source src="assets/videos/arena-intro.mp4" type="video/mp4" />
+        </video>
+        <div class="video-fallback">
+          <div class="scan-lines"></div><div class="video-grid-art"><span>GZ</span><small>YOUR STUDENT-MADE MOTION GRAPHIC GOES HERE</small></div>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="video-caption"><span class="eyebrow">STUDENT-MADE MOTION SLOT</span><h2>From signup to <span>victory.</span></h2><p>Replace this block with a short screen-recording or custom gaming animation.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal"><div><span class="eyebrow">BUILT FOR SDC</span><h2>Simple system. <span>Real workflow.</span></h2></div></div>
+      <div class="workflow-grid">
+        <article class="workflow-card reveal"><span>01</span><strong>Create Account</strong><p>Signup and save your profile locally in the browser.</p></article>
+        <article class="workflow-card reveal reveal-delay-1"><span>02</span><strong>Find a Tournament</strong><p>Browse games, dates, slots, prize pools and entry type.</p></article>
+        <article class="workflow-card reveal reveal-delay-2"><span>03</span><strong>Register</strong><p>Join a tournament with one click and track your entries.</p></article>
+        <article class="workflow-card reveal reveal-delay-3"><span>04</span><strong>Admin Control</strong><p>Admins manage tournaments, users and registrations.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="brand"><span class="brand-mark">GZ</span><span><strong>GAMEZONE</strong><small>SDC Project</small></span></div><p>Built with HTML, CSS & JavaScript • LocalStorage powered</p><p>© 2026 GameZone</p></footer>
+  <script src="js/auth.js"></script>
+  <script src="js/tournaments.js"></script>
+</body>
+</html>
