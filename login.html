@@ -1,8 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login | GameZone</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/auth.css"></head>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | GameZone</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/auth.css"
+    >
+
+</head>
+
+
 <body data-page="login">
-<div class="auth-shell"><div class="auth-art"><a class="brand" href="index.html"><span class="brand-mark">GZ</span><span><strong>GAMEZONE</strong><small>Tournament Portal</small></span></a><div class="auth-art-copy"><span class="eyebrow">WELCOME BACK</span><h1>THE ARENA<br><span>IS WAITING.</span></h1><p>Login to continue your tournament journey.</p><div class="mini-orbit"><div class="orbit-dot"></div></div></div></div>
-<div class="auth-panel"><a class="back-link" href="index.html">← Back to home</a><div class="form-card"><span class="eyebrow">PLAYER ACCESS</span><h2>Welcome back</h2><p>Enter your credentials to access your dashboard.</p><form id="loginForm"><label>Email<input id="loginEmail" type="email" placeholder="you@example.com" required></label><label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="••••••••" required><button type="button" class="show-pass" data-target="loginPassword">Show</button></div></label><div class="form-row"><label class="check"><input id="rememberMe" type="checkbox"> Remember me</label><span></span></div><button class="btn btn-primary btn-full" type="submit">Enter Arena <span>↗</span></button><p class="form-message" id="loginMessage"></p></form><div class="divider"><span>DEMO ACCESS</span></div><div class="demo-box"><p><strong>Admin</strong><br>admin@gamezone.com / admin123</p><p><strong>New player?</strong><br><a href="signup.html">Create an account →</a></p></div></div></div></div>
-<script src="js/auth.js"></script><script src="js/tournaments.js"></script>
-</body></html>
+
+
+<div class="auth-shell">
+
+
+    <!-- =====================================
+         LEFT ART
+         ===================================== -->
+
+    <div class="auth-art">
+
+        <a
+            class="brand"
+            href="index.html"
+        >
+
+            <span class="brand-mark">
+                GZ
+            </span>
+
+            <span>
+
+                <strong>
+                    GAMEZONE
+                </strong>
+
+                <small>
+                    Tournament Portal
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <div class="auth-art-copy">
+
+            <span class="eyebrow">
+                WELCOME BACK
+            </span>
+
+
+            <h1>
+
+                THE ARENA
+
+                <br>
+
+                <span>
+                    IS WAITING.
+                </span>
+
+            </h1>
+
+
+            <p>
+                Login to continue your tournament journey,
+                organize your events, or manage GameZone.
+            </p>
+
+
+            <div class="mini-orbit">
+
+                <div class="orbit-dot"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         LOGIN PANEL
+         ===================================== -->
+
+    <div class="auth-panel">
+
+
+        <a
+            class="back-link"
+            href="index.html"
+        >
+            ← Back to home
+        </a>
+
+
+        <div class="form-card">
+
+
+            <span class="eyebrow">
+                UNIVERSAL ACCESS
+            </span>
+
+
+            <h2>
+                Welcome back
+            </h2>
+
+
+            <p>
+                Login as a Player, Organizer or Admin.
+            </p>
+
+
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <label>
+
+                    Email
+
+                    <input
+                        id="loginEmail"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+
+                <!-- PASSWORD -->
+
+                <label>
+
+                    Password
+
+                    <div class="password-wrap">
+
+                        <input
+                            id="loginPassword"
+                            type="password"
+                            placeholder="••••••••"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-pass"
+                            data-target="loginPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- REMEMBER -->
+
+                <div class="form-row">
+
+                    <label class="check">
+
+                        <input
+                            id="rememberMe"
+                            type="checkbox"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                    <span></span>
+
+                </div>
+
+
+
+                <!-- LOGIN -->
+
+                <button
+                    class="btn btn-primary btn-full"
+                    type="submit"
+                >
+
+                    Enter Arena
+
+                    <span>
+                        ↗
+                    </span>
+
+                </button>
+
+
+                <p
+                    class="form-message"
+                    id="loginMessage"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- =================================
+                 DEMO ACCESS
+                 ================================= -->
+
+            <div class="divider">
+
+             
+            </div>
+
+
+            <div class="demo-box">
+
+
+            
+
+
+            </div>
+
+
+            <div
+                class="demo-box"
+                style="margin-top:12px"
+            >
+
+                <p>
+
+                    <strong>
+                        Player
+                    </strong>
+
+                    <br>
+
+                    Create your own account
+                    from Signup.
+
+                </p>
+
+
+                <p>
+
+                    <strong>
+                        Organizer
+                    </strong>
+
+                    <br>
+
+                    Create an organizer account
+                    from Signup.
+
+                </p>
+
+            </div>
+
+
+            <p class="switch-text">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Create one →
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/auth.js"></script>
+<script src="js/tournaments.js"></script>
+
+</body>
+
+</html>

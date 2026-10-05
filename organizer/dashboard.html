@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Organizer Dashboard | GameZone</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/organizer.css">
+</head>
+
+<body data-page="organizer-dashboard">
+
+<header class="dashboard-nav organizer-nav">
+
+    <a class="brand" href="dashboard.html">
+        <span class="brand-mark">GZ</span>
+
+        <span>
+            <strong>GAMEZONE</strong>
+            <small>Organizer Console</small>
+        </span>
+    </a>
+
+    <nav>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="registrations.html">Registrations</a>
+    </nav>
+
+    <button id="logoutBtn" class="btn btn-ghost">
+        Logout
+    </button>
+
+</header>
+
+<main class="dashboard-main">
+
+    <section class="welcome-banner organizer-banner">
+
+        <div>
+            <span class="eyebrow">ORGANIZER CONSOLE</span>
+
+            <h1>
+                Run the <span>arena.</span>
+            </h1>
+
+            <p>
+                Create tournaments, control schedules and manage
+                participants from one place.
+            </p>
+        </div>
+
+        <a class="btn btn-primary" href="tournaments.html">
+            Manage Tournaments ↗
+        </a>
+
+    </section>
+
+
+    <section class="stat-grid">
+
+        <div class="stat-card">
+            <span>MY TOURNAMENTS</span>
+            <strong id="orgTournaments">0</strong>
+            <small>Created or assigned to you</small>
+        </div>
+
+        <div class="stat-card">
+            <span>REGISTRATIONS</span>
+            <strong id="orgRegistrations">0</strong>
+            <small>Total player entries</small>
+        </div>
+
+        <div class="stat-card">
+            <span>UPCOMING</span>
+            <strong id="orgUpcoming">0</strong>
+            <small>Scheduled events</small>
+        </div>
+
+        <div class="stat-card">
+            <span>PLAYERS</span>
+            <strong id="orgPlayers">0</strong>
+            <small>Unique participants</small>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-section">
+
+        <div class="section-heading compact">
+
+            <div>
+                <span class="eyebrow">SCHEDULE</span>
+
+                <h2>
+                    Upcoming <span>Events</span>
+                </h2>
+            </div>
+
+            <a href="registrations.html">
+                View registrations →
+            </a>
+
+        </div>
+
+
+        <div id="organizerTournamentList" class="admin-list"></div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/auth.js"></script>
+<script src="../js/tournaments.js"></script>
+<script src="../js/organizer.js"></script>
+
+</body>
+</html>
+```

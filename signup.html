@@ -1,8 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sign Up | GameZone</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/auth.css"></head>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | GameZone</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/auth.css"
+    >
+
+</head>
+
+
 <body data-page="signup">
-<div class="auth-shell"><div class="auth-art signup-art"><a class="brand" href="index.html"><span class="brand-mark">GZ</span><span><strong>GAMEZONE</strong><small>Tournament Portal</small></span></a><div class="auth-art-copy"><span class="eyebrow">NEW PLAYER</span><h1>BUILD YOUR<br><span>LEGACY.</span></h1><p>Create a profile and get ready for your first tournament.</p><div class="floating-ranks"><span>BRONZE</span><span>⚡ SILVER</span><span>GOLD ⚡</span></div></div></div>
-<div class="auth-panel"><a class="back-link" href="index.html">← Back to home</a><div class="form-card"><span class="eyebrow">CREATE PROFILE</span><h2>Join the arena</h2><p>It takes less than a minute. Your data stays in this browser.</p><form id="signupForm"><label>Full Name<input id="signupName" type="text" placeholder="Your name" minlength="2" required></label><label>Email<input id="signupEmail" type="email" placeholder="you@example.com" required></label><label>Password<div class="password-wrap"><input id="signupPassword" type="password" placeholder="At least 6 characters" minlength="6" required><button type="button" class="show-pass" data-target="signupPassword">Show</button></div></label><label>Confirm Password<input id="signupConfirm" type="password" placeholder="Re-enter password" required></label><button class="btn btn-primary btn-full" type="submit">Create Account <span>↗</span></button><p class="form-message" id="signupMessage"></p></form><p class="switch-text">Already have an account? <a href="login.html">Login →</a></p></div></div></div>
-<script src="js/auth.js"></script><script src="js/tournaments.js"></script>
-</body></html>
+
+
+<div class="auth-shell">
+
+
+    <!-- =====================================
+         LEFT ART
+         ===================================== -->
+
+    <div class="auth-art signup-art">
+
+
+        <a
+            class="brand"
+            href="index.html"
+        >
+
+            <span class="brand-mark">
+                GZ
+            </span>
+
+            <span>
+
+                <strong>
+                    GAMEZONE
+                </strong>
+
+                <small>
+                    Tournament Portal
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <div class="auth-art-copy">
+
+
+            <span class="eyebrow">
+                JOIN THE ARENA
+            </span>
+
+
+            <h1>
+
+                BUILD YOUR
+
+                <br>
+
+                <span>
+                    LEGACY.
+                </span>
+
+            </h1>
+
+
+            <p>
+                Create an account as a player or
+                tournament organizer and start building
+                your gaming journey.
+            </p>
+
+
+            <div class="floating-ranks">
+
+                <span>
+                    PLAYER
+                </span>
+
+                <span>
+                    ⚡ ORGANIZER
+                </span>
+
+                <span>
+                    TOURNAMENTS ⚡
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         SIGNUP PANEL
+         ===================================== -->
+
+    <div class="auth-panel">
+
+
+        <a
+            class="back-link"
+            href="index.html"
+        >
+            ← Back to home
+        </a>
+
+
+        <div class="form-card">
+
+
+            <span class="eyebrow">
+                CREATE PROFILE
+            </span>
+
+
+            <h2>
+                Join the arena
+            </h2>
+
+
+            <p>
+                Choose your role and create your
+                GameZone account.
+            </p>
+
+
+
+            <form id="signupForm">
+
+
+                <!-- NAME -->
+
+                <label>
+
+                    Full Name
+
+                    <input
+                        id="signupName"
+                        type="text"
+                        placeholder="Your name"
+                        minlength="2"
+                        required
+                    >
+
+                </label>
+
+
+
+                <!-- EMAIL -->
+
+                <label>
+
+                    Email
+
+                    <input
+                        id="signupEmail"
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </label>
+
+
+
+                <!-- ROLE -->
+
+                <label>
+
+                    Account Type
+
+                    <select
+                        id="signupRole"
+                        required
+                    >
+
+                        <option
+                            value="user"
+                        >
+                            Player
+                        </option>
+
+                        <option
+                            value="organizer"
+                        >
+                            Organizer
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+
+                <!-- PASSWORD -->
+
+                <label>
+
+                    Password
+
+                    <div class="password-wrap">
+
+                        <input
+                            id="signupPassword"
+                            type="password"
+                            placeholder="At least 6 characters"
+                            minlength="6"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="show-pass"
+                            data-target="signupPassword"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </label>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <label>
+
+                    Confirm Password
+
+                    <input
+                        id="signupConfirm"
+                        type="password"
+                        placeholder="Re-enter password"
+                        required
+                    >
+
+                </label>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    class="btn btn-primary btn-full"
+                    type="submit"
+                >
+
+                    Create Account
+
+                    <span>
+                        ↗
+                    </span>
+
+                </button>
+
+
+                <p
+                    class="form-message"
+                    id="signupMessage"
+                ></p>
+
+
+            </form>
+
+
+
+            <!-- INFO -->
+
+            <div class="divider">
+
+                <span>
+                    ROLE INFORMATION
+                </span>
+
+            </div>
+
+
+            <div class="demo-box">
+
+
+                <p>
+
+                    <strong>
+                        Player
+                    </strong>
+
+                    <br>
+
+                    Browse and register for
+                    gaming tournaments.
+
+                </p>
+
+
+                <p>
+
+                    <strong>
+                        Organizer
+                    </strong>
+
+                    <br>
+
+                    Create and manage tournaments
+                    and registrations.
+
+                </p>
+
+
+            </div>
+
+
+            <p class="switch-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login →
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/auth.js"></script>
+<script src="js/tournaments.js"></script>
+
+</body>
+
+</html>

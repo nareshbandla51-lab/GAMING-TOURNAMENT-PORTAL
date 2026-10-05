@@ -1,0 +1,279 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Tournaments | GameZone</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/organizer.css">
+
+</head>
+
+<body data-page="organizer-tournaments">
+
+<header class="dashboard-nav organizer-nav">
+
+    <a class="brand" href="dashboard.html">
+
+        <span class="brand-mark">GZ</span>
+
+        <span>
+            <strong>GAMEZONE</strong>
+            <small>Organizer Console</small>
+        </span>
+
+    </a>
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a class="active" href="tournaments.html">
+            Tournaments
+        </a>
+
+        <a href="registrations.html">
+            Registrations
+        </a>
+
+    </nav>
+
+    <button id="logoutBtn" class="btn btn-ghost">
+        Logout
+    </button>
+
+</header>
+
+
+<main class="dashboard-main">
+
+    <section class="page-title">
+
+        <span class="eyebrow">
+            TOURNAMENT OPERATIONS
+        </span>
+
+        <h1>
+            Manage <span>Events</span>
+        </h1>
+
+        <p>
+            Create, update, schedule and remove tournaments
+            assigned to your organizer account.
+        </p>
+
+    </section>
+
+
+    <div class="toolbar">
+
+        <button id="openCreateBtn" class="btn btn-primary">
+            + Create Tournament
+        </button>
+
+        <a class="btn btn-ghost" href="registrations.html">
+            View Players ↗
+        </a>
+
+    </div>
+
+
+    <section class="admin-table-wrap">
+
+        <div id="organizerTournamentTable"></div>
+
+    </section>
+
+</main>
+
+
+<!-- CREATE / EDIT MODAL -->
+
+<div id="tournamentModal" class="modal">
+
+    <div class="modal-card">
+
+        <button id="closeModal" class="modal-close">
+            ×
+        </button>
+
+        <span class="eyebrow">
+            ORGANIZER FORM
+        </span>
+
+        <h2 id="modalTitle">
+            Create Tournament
+        </h2>
+
+
+        <form id="tournamentForm" class="admin-form">
+
+            <input
+                id="editId"
+                type="hidden"
+            >
+
+
+            <div class="form-grid">
+
+                <label>
+                    Tournament Name
+
+                    <input
+                        id="tName"
+                        required
+                        placeholder="Campus Clash"
+                    >
+
+                </label>
+
+
+                <label>
+                    Game
+
+                    <select id="tGame">
+
+                        <option>Call of Duty</option>
+                        <option>Free Fire</option>
+                        <option>Valorant</option>
+                        <option>Fortnite</option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Type
+
+                    <select id="tType">
+
+                        <option>Free</option>
+                        <option>Paid</option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Date
+
+                    <input
+                        id="tDate"
+                        type="date"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Time
+
+                    <input
+                        id="tTime"
+                        type="time"
+                        value="19:00"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Prize Pool
+
+                    <input
+                        id="tPrize"
+                        required
+                        placeholder="₹10,000"
+                    >
+
+                </label>
+
+
+                <label>
+                    Slots
+
+                    <input
+                        id="tSlots"
+                        type="number"
+                        min="2"
+                        value="100"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Status
+
+                    <select id="tStatus">
+
+                        <option>Upcoming</option>
+                        <option>Live</option>
+                        <option>Completed</option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <label>
+
+                Description
+
+                <textarea
+                    id="tDescription"
+                    rows="4"
+                    placeholder="Tell players what to expect..."
+                ></textarea>
+
+            </label>
+
+
+            <div class="admin-actions">
+
+                <button
+                    class="btn btn-primary"
+                    type="submit"
+                >
+                    Save Tournament
+                </button>
+
+                <button
+                    class="btn btn-ghost"
+                    type="button"
+                    id="cancelModal"
+                >
+                    Cancel
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="../js/auth.js"></script>
+<script src="../js/tournaments.js"></script>
+<script src="../js/organizer.js"></script>
+
+</body>
+</html>
+```
